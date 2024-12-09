@@ -3,7 +3,37 @@
 ## Overview
 This assessment evaluates your ability to work with Entity Framework Core, Web APIs, real-time communication, and Angular frontend development. You'll be converting a stored procedure-based system to a modern web application.
 
-![CMMS System Architecture](images/cmms-architecture.mmd)
+```mermaid
+graph TB
+    subgraph "Task 1: Backend Development"
+        DB[(SQL Server DB)]
+        EF[Entity Framework Core]
+        API[ASP.NET Core API]
+        DB -->|Scaffold| EF
+        EF -->|Repository Pattern| API
+        API -->|REST Endpoints| Client
+    end
+
+    subgraph "Task 2: Real-time Updates"
+        SH[SignalR Hub]
+        CM[Connection Manager]
+        NM[Notification Manager]
+        SH -->|Manage Connections| CM
+        CM -->|Broadcast| NM
+        NM -->|Push Updates| Client
+    end
+
+    subgraph "Task 3: Angular Frontend"
+        WL[Work Order List]
+        WD[Work Order Details]
+        RT[Real-time Service]
+        DS[Data Service]
+        WL -->|Expand| WD
+        RT -->|Subscribe| WL
+        DS -->|HTTP| API
+        DS -->|SignalR| SH
+    end
+```
 
 ## Prerequisites
 - SQL Server 2022
