@@ -3,6 +3,8 @@
 ## Overview
 This assessment evaluates your ability to work with Entity Framework Core, Web APIs, real-time communication, and Angular frontend development. You'll be converting a stored procedure-based system to a modern web application.
 
+![CMMS System Architecture](images/cmms-architecture.mmd)
+
 ## Prerequisites
 - SQL Server 2022
 - Visual Studio 2022
