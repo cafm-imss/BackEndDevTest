@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qDHREyFVstoWjarDWwvCg9jdeJu8dfP24W7Dt/+3YJ4=",
+  "Source": "Cafm.Api",
+  "BasePath": "_content/Cafm.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

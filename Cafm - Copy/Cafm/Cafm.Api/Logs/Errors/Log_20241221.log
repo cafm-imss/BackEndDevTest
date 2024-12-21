@@ -1,0 +1,67 @@
+Time: 2024-12-21 09:53:38.165
+Level: Error
+An error occurred using the connection to database '"CMMS-BE-Test-2"' on server '"SERVER\SQLEXPRESS"'.
+Exception: 
+
+
+Time: 2024-12-21 09:54:18.816
+Level: Error
+An error occurred using the connection to database '"CMMS-BE-Test-2"' on server '"SERVER\SQLEXPRESS"'.
+Exception: 
+
+
+Time: 2024-12-21 10:02:31.559
+Level: Error
+Failed executing DbCommand ("119"ms) [Parameters=["@__companyId_0='?' (DbType = Int32), @__locationId_1='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [w].[Id], [w].[AssetDownTime], [w].[AssetId], [w].[CompanyId], [w].[CompletionDate], [w].[CompletionNote], [w].[CompletionRatio], [w].[CreatedBy], [w].[CreatedDate], [w].[CreatedOn], [w].[DeletedOn], [w].[DueDate], [w].[EstimatedTime], [w].[InternalNumber], [w].[IsActive], [w].[IsDeleted], [w].[LocationId], [w].[ModifiedDate], [w].[PriorityId], [w].[StartDate], [w].[TaskAssignmentId], [w].[TaskDescription], [w].[TaskName], [w].[TaskPriorityPriorityId], [w].[TaskStatusId], [w].[TaskTypeId], [w].[UpdatedBy], [w].[UpdatedOn]
+FROM [WorkOrders] AS [w]
+WHERE [w].[CompanyId] = @__companyId_0 AND [w].[LocationId] = @__locationId_1"
+Exception: 
+
+
+Time: 2024-12-21 10:02:31.580
+Level: Error
+An exception occurred while iterating over the results of a query for context type '"Cafm.Infrastructure.Data.CafmContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedOn'.
+Invalid column name 'DeletedOn'.
+Invalid column name 'IsActive'.
+Invalid column name 'TaskPriorityPriorityId'.
+Invalid column name 'UpdatedBy'.
+Invalid column name 'UpdatedOn'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b138b779-fb87-4dca-ae80-3b105a1d6c61
+Error Number:207,State:1,Class:16"
+Exception: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedOn'.
+Invalid column name 'DeletedOn'.
+Invalid column name 'IsActive'.
+Invalid column name 'TaskPriorityPriorityId'.
+Invalid column name 'UpdatedBy'.
+Invalid column name 'UpdatedOn'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b138b779-fb87-4dca-ae80-3b105a1d6c61
+Error Number:207,State:1,Class:16
+
+
+
