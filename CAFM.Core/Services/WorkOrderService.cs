@@ -3,6 +3,7 @@ using CAFM.Core.Interfaces;
 using CAFM.Database.Models;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -37,7 +38,10 @@ namespace CAFM.Core.Services
                 await _unitOfWork.SaveChangesAsync();
 
                 // Broadcast new work order to all clients
-                await _hubContext.Clients.All.SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, "New work order created");
+                var groupName = $"Company_{workOrder.CompanyId}_Location_{workOrder.LocationId}";
+
+                // Notify all clients in the group
+                await _hubContext.Clients.Group(groupName).SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, workOrder.TaskStatus.StatusName);
 
                 await transaction.CommitAsync();
                 return workOrder.Id;
@@ -165,9 +169,11 @@ namespace CAFM.Core.Services
             // Save changes
             _unitOfWork.WorkOrderRepository.Update(workOrder);
             await _unitOfWork.SaveChangesAsync();
+            // Broadcast new work order to all clients
+            var groupName = $"Company_{workOrder.CompanyId}_Location_{workOrder.LocationId}";
 
-            // Broadcast status change to clients
-            await _hubContext.Clients.All.SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, "Work order status updated");
+            // Notify all clients in the group
+            await _hubContext.Clients.Group(groupName).SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, workOrder.TaskStatus.StatusName);
 
             return true;
         }

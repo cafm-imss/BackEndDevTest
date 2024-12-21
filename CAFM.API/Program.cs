@@ -1,6 +1,7 @@
 using CAFM.API.Extension;
 using CAFM.Core.Hubs;
 using CAFM.Database.Models;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
 namespace CAFM.API
@@ -16,6 +17,10 @@ namespace CAFM.API
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddApplicationServices();
+            // Configure CORS
+            builder.Services.AddCors(options => {
+                options.AddPolicy("CORSPolicy", builder => builder.AllowAnyMethod().AllowAnyHeader().AllowCredentials().SetIsOriginAllowed((hosts) => true));
+            });
 
             builder.Services.AddControllers()
                        .AddJsonOptions(options =>
@@ -37,6 +42,7 @@ namespace CAFM.API
             app.UseRouting();
 
             app.UseHttpsRedirection();
+            app.UseCors("CORSPolicy");
 
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
@@ -44,6 +50,7 @@ namespace CAFM.API
                 endpoints.MapControllers();  // Your other controller routes
                 endpoints.MapHub<WorkOrderHub>("/workOrderHub");  // Map the SignalR hub
             });
+            app.UseCors(); // Apply the CORS policy
 
             app.MapControllers();
 

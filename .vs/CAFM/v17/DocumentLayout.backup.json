@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{9C78D9A7-C281-4F94-A97E-8BC861E816A2}|CAFM.API\\CAFM.API.csproj|solutionrelative:cafm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC20D76-5618-434E-963B-12A43F59B892}|CAFM.Core\\CAFM.Core.csproj|c:\\users\\ahmed\\documents\\m.a\\work\\backenddevtest\\cafm.core\\services\\workorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AC20D76-5618-434E-963B-12A43F59B892}|CAFM.Core\\CAFM.Core.csproj|solutionrelative:cafm.core\\services\\workorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AC20D76-5618-434E-963B-12A43F59B892}|CAFM.Core\\CAFM.Core.csproj|c:\\users\\ahmed\\documents\\m.a\\work\\backenddevtest\\cafm.core\\hubs\\workorderhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC20D76-5618-434E-963B-12A43F59B892}|CAFM.Core\\CAFM.Core.csproj|solutionrelative:cafm.core\\hubs\\workorderhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C78D9A7-C281-4F94-A97E-8BC861E816A2}|CAFM.API\\CAFM.API.csproj|c:\\users\\ahmed\\documents\\m.a\\work\\backenddevtest\\cafm.api\\controllers\\workordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C78D9A7-C281-4F94-A97E-8BC861E816A2}|CAFM.API\\CAFM.API.csproj|solutionrelative:cafm.api\\controllers\\workordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C78D9A7-C281-4F94-A97E-8BC861E816A2}|CAFM.API\\CAFM.API.csproj|c:\\users\\ahmed\\documents\\m.a\\work\\backenddevtest\\cafm.api\\extension\\addapplicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C78D9A7-C281-4F94-A97E-8BC861E816A2}|CAFM.API\\CAFM.API.csproj|solutionrelative:cafm.api\\extension\\addapplicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,54 +90,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WorkOrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Controllers\\WorkOrderController.cs",
-              "RelativeDocumentMoniker": "CAFM.API\\Controllers\\WorkOrderController.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Controllers\\WorkOrderController.cs",
-              "RelativeToolTip": "CAFM.API\\Controllers\\WorkOrderController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAEwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:35:04.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WorkOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.Core\\Services\\WorkOrderService.cs",
-              "RelativeDocumentMoniker": "CAFM.Core\\Services\\WorkOrderService.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.Core\\Services\\WorkOrderService.cs",
-              "RelativeToolTip": "CAFM.Core\\Services\\WorkOrderService.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAIAwwJgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:34:48.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddApplicationServices.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Extension\\AddApplicationServices.cs",
-              "RelativeDocumentMoniker": "CAFM.API\\Extension\\AddApplicationServices.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Extension\\AddApplicationServices.cs",
-              "RelativeToolTip": "CAFM.API\\Extension\\AddApplicationServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:34:01.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Program.cs",
               "RelativeDocumentMoniker": "CAFM.API\\Program.cs",
               "ToolTip": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Program.cs",
               "RelativeToolTip": "CAFM.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T12:33:38.531Z",
+              "WhenOpened": "2024-12-21T13:26:34.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Controllers\\WorkOrderController.cs",
+              "RelativeDocumentMoniker": "CAFM.API\\Controllers\\WorkOrderController.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.API\\Controllers\\WorkOrderController.cs",
+              "RelativeToolTip": "CAFM.API\\Controllers\\WorkOrderController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T12:54:34.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorkOrderHub.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.Core\\Hubs\\WorkOrderHub.cs",
+              "RelativeDocumentMoniker": "CAFM.Core\\Hubs\\WorkOrderHub.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Documents\\M.A\\work\\BackEndDevTest\\CAFM.Core\\Hubs\\WorkOrderHub.cs",
+              "RelativeToolTip": "CAFM.Core\\Hubs\\WorkOrderHub.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T12:58:00.46Z",
               "EditorCaption": ""
             }
           ]

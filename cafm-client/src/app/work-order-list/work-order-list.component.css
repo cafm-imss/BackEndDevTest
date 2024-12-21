@@ -1,0 +1,13 @@
+.loading {
+  font-size: 18px;
+  color: blue;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+.work-order {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
