@@ -70,6 +70,12 @@ graph TB
      - Messages_System
    - Create and apply initial migration (comment out Up/Down content)
 
+   Note: you may need to create a factory for the dbcontext class in order to be able to apply the migration from a class library project.
+
+   Note: make sure to comment all the code inside up and down methods. because the database objects are already created in the db.
+
+   - Commit with message: `feat: database context with first migration`
+
 2. **Service Layer**
    - Convert `WorkOrdersSave` stored procedure to C# service
    - Implement:
