@@ -6,32 +6,30 @@ using CAFM.Database.Models;
 
 namespace CAFM.Core.Services
 {
-    public class BaseRepository<T> : IBaseRepository<T>, IAsyncDisposable where T : class
+    public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        protected readonly CmmsBeTestContext _context;
-        private readonly DbSet<T> _dbSet;
+        protected readonly CmmsBeTestContext Context;
 
         public BaseRepository(CmmsBeTestContext context)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
-            _dbSet = _context.Set<T>();
+            Context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         // Query Helper
         private IQueryable<T> PrepareQuery(
-            Expression<Func<T, bool>>? filter = null,
+            Expression<Func<T, bool>>? criteria = null,
             Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
             Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
             int? skip = null, int? take = null,
             bool isNoTracking = false)
         {
-            var query = _dbSet.AsQueryable();
-
-            if (filter != null)
-                query = query.Where(filter);
+            var query = Context.Set<T>().AsQueryable();
 
             if (include != null)
                 query = include(query);
+
+            if (criteria != null)
+                query = query.Where(criteria);
 
             if (orderBy != null)
                 query = orderBy(query);
@@ -49,139 +47,126 @@ namespace CAFM.Core.Services
         }
 
         // Get All
-        public IReadOnlyList<T> GetAll(
-            Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null)
+        public IEnumerable<T> GetAll(Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null)
         {
             return PrepareQuery(include: include, orderBy: orderBy).ToList();
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync(
-            Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null)
+        public async Task<IEnumerable<T>> GetAllAsync(Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null)
         {
-            return await PrepareQuery(include: include, orderBy: orderBy).ToListAsync().ConfigureAwait(false);
+            return await PrepareQuery(include: include, orderBy: orderBy).ToListAsync();
         }
 
         // Get By ID
-        public T? GetById(object id)
+        public T? GetById(int id)
         {
-            return _dbSet.Find(id);
+            return Context.Set<T>().Find(id);
         }
 
-        public async ValueTask<T?> GetByIdAsync(object id)
+        public async Task<T?> GetByIdAsync(int id)
         {
-            return await _dbSet.FindAsync(id).ConfigureAwait(false);
+            return await Context.Set<T>().FindAsync(id);
+        }        // Get By ID
+        public T? GetById(long id)
+        {
+            return Context.Set<T>().Find(id);
+        }
+
+        public async Task<T?> GetByIdAsync(long id)
+        {
+            return await Context.Set<T>().FindAsync(id);
         }
 
         // Find
-        public T? Find(
-            Expression<Func<T, bool>> filter,
-            Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
-            bool isNoTracking = false)
+        public T? Find(Expression<Func<T, bool>> criteria, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, bool isNoTracking = false)
         {
-            return PrepareQuery(filter, include, isNoTracking: isNoTracking).FirstOrDefault();
+            return PrepareQuery(criteria, include, isNoTracking: isNoTracking).FirstOrDefault();
         }
 
-        public async Task<T?> FindAsync(
-            Expression<Func<T, bool>> filter,
-            Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
-            bool isNoTracking = false)
+        public async Task<T?> FindAsync(Expression<Func<T, bool>> criteria, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, bool isNoTracking = false)
         {
-            return await PrepareQuery(filter, include, isNoTracking: isNoTracking).FirstOrDefaultAsync().ConfigureAwait(false);
+            return await PrepareQuery(criteria, include, isNoTracking: isNoTracking).FirstOrDefaultAsync();
         }
 
-        // Find All
-        public async Task<IReadOnlyList<T>> FindAllAsync(
-            Expression<Func<T, bool>> filter,
+        public async Task<IEnumerable<T>> FindAllAsync(
+            Expression<Func<T, bool>> criteria,
             int? skip = null, int? take = null,
             Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
-            bool isNoTracking = false)
+            Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, bool isNoTracking = false)
         {
-            return await PrepareQuery(filter, include, orderBy, skip, take, isNoTracking).ToListAsync().ConfigureAwait(false);
+            return PrepareQuery(criteria, include, orderBy, skip, take, isNoTracking).AsEnumerable();
         }
 
         // Add
         public T Add(T entity)
         {
-            _dbSet.Add(entity);
+            Context.Set<T>().Add(entity);
             return entity;
         }
 
         public async ValueTask<T> AddAsync(T entity)
         {
-            await _dbSet.AddAsync(entity).ConfigureAwait(false);
+            await Context.Set<T>().AddAsync(entity);
             return entity;
         }
 
         // Add Range
-        public void AddRange(IEnumerable<T> entities)
+        public IEnumerable<T> AddRange(IEnumerable<T> entities)
         {
-            _dbSet.AddRange(entities);
+            Context.Set<T>().AddRange(entities);
+            return entities;
         }
 
-        public async Task AddRangeAsync(IEnumerable<T> entities)
+        public async Task<IEnumerable<T>> AddRangeAsync(IEnumerable<T> entities)
         {
-            await _dbSet.AddRangeAsync(entities).ConfigureAwait(false);
+            await Context.Set<T>().AddRangeAsync(entities);
+            return entities;
         }
 
         // Update
         public T Update(T entity)
         {
-            _dbSet.Update(entity);
+            Context.Update(entity);
             return entity;
         }
 
         // Delete
         public void Delete(T entity)
         {
-            _dbSet.Remove(entity);
+            Context.Set<T>().Remove(entity);
         }
 
         public void DeleteRange(IEnumerable<T> entities)
         {
-            _dbSet.RemoveRange(entities);
+            Context.Set<T>().RemoveRange(entities);
         }
 
         // Count
-        public int Count(Expression<Func<T, bool>>? filter = null)
+        public int Count(Expression<Func<T, bool>>? criteria = null)
         {
-            return filter == null ? _dbSet.Count() : _dbSet.Count(filter);
+            return criteria == null ? Context.Set<T>().Count() : Context.Set<T>().Count(criteria);
         }
 
-        public async Task<int> CountAsync(Expression<Func<T, bool>>? filter = null)
+        public async Task<int> CountAsync(Expression<Func<T, bool>>? criteria = null)
         {
-            return filter == null ? await _dbSet.CountAsync().ConfigureAwait(false) : await _dbSet.CountAsync(filter).ConfigureAwait(false);
+            return criteria == null ? await Context.Set<T>().CountAsync() : await Context.Set<T>().CountAsync(criteria);
         }
 
-        // Exists
-        public bool Exists(Expression<Func<T, bool>> filter)
+        // Existence Check
+        public bool IsExist(Expression<Func<T, bool>> criteria)
         {
-            return _dbSet.Any(filter);
+            return Context.Set<T>().Any(criteria);
         }
 
-        public async Task<bool> ExistsAsync(Expression<Func<T, bool>> filter)
+        public async Task<bool> IsExistAsync(Expression<Func<T, bool>> criteria)
         {
-            return await _dbSet.AnyAsync(filter).ConfigureAwait(false);
+            return await Context.Set<T>().AnyAsync(criteria);
         }
 
-        // Save Changes
-        public void SaveChanges()
-        {
-            _context.SaveChanges();
-        }
-
-        public async Task SaveChangesAsync()
-        {
-            await _context.SaveChangesAsync().ConfigureAwait(false);
-        }
-
-        // Dispose Async
+        // Resource Disposal
         public async ValueTask DisposeAsync()
         {
-            await _context.DisposeAsync();
+            await Context.DisposeAsync();
         }
     }
-
 }

@@ -1,3 +1,6 @@
+using CAFM.API.Extension;
+using CAFM.Database.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CAFM.API
 {
@@ -7,10 +10,18 @@ namespace CAFM.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Register DbContext
+            builder.Services.AddDbContext<CmmsBeTestContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddApplicationServices();
+
+            builder.Services.AddControllers()
+                       .AddJsonOptions(options =>
+                       {
+                           options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                           options.JsonSerializerOptions.MaxDepth = 64; // Optionally, increase the max depth if needed
+                       });            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
