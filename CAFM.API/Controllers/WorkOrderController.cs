@@ -1,4 +1,5 @@
-﻿using CAFM.Application.Features.WorkOrder.Queries.GetWorkOrder;
+﻿using CAFM.Application.Features.WorkOrder.Commands.UpdateWorkOrderStatus;
+using CAFM.Application.Features.WorkOrder.Queries.GetWorkOrder;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,12 +17,24 @@ namespace CAFM.API.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("api/workorder/{id}", Name = "GetWorkOrder")]
+        [HttpGet("api/workorder/{id}")]
         [ProducesResponseType(typeof(GetWorkOrderQueryResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(List<string>), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<GetWorkOrderQueryResponse>> GetWorkOrder(long id)
         {
             var result = await _mediator.Send(new GetWorkOrderQuery(id));
+
+            return GetApiResponse(result);
+        }
+
+        [HttpPut("/api/workorder/{id}/status")]
+        [ProducesResponseType(typeof(UpdateWorkOrderStatusCommandResponse), StatusCodes.Status204NoContent)]
+        [ProducesResponseType(typeof(List<string>), StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<UpdateWorkOrderStatusCommandResponse>> UpdateWorkOrderStatus(long id, [FromBody] UpdateWorkOrderStatusCommand command)
+        {
+            command.WorkOrderId = id;
+
+            var result = await _mediator.Send(command);
 
             return GetApiResponse(result);
         }

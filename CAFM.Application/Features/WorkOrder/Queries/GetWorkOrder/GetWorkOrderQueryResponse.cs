@@ -36,5 +36,39 @@
 
         public int AssetDownTime { get; set; }
 
+        public GetWorkOrderTaskStatus TaskStatus { get; set; }
+        public GetWorkOrderAsset? Asset { get; set; }
+    }
+    public class GetWorkOrderAsset
+    {
+        public long Id { get; set; }
+
+        public string Notes { get; set; }
+        public long? ParentId { get; set; }
+
+        public long? InternalId { get; set; }
+
+        public short? AssetOrder { get; set; }
+
+
+        public int CompanyId { get; set; }
+
+        public long LocationId { get; set; }
+
+        public string AssetName { get; set; }
+
+        public long? CategoryId { get; set; }
+
+        public string ImagePath { get; set; }
+
+        public byte? WeeklyOperationHours { get; set; }
+    }
+    public class GetWorkOrderTaskStatus
+    {
+        public long Id { get; set; }
+        public string StatusName { get; set; }
+        public string StatusNameEn { get; set; }
+        public bool IsStart { get; set; }
+        public bool IsCompleted { get; set; }
     }
 }

@@ -22,6 +22,7 @@ namespace CAFM.Persistence
         private static void AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<IWorkOrderRepo, WorkOrderRepo>();
+            services.AddScoped<ITaskStatusRepo, TaskStatusRepo>();
         }
     }
 }
