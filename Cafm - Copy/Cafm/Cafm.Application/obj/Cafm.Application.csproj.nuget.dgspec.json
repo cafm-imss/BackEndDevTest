@@ -1,0 +1,407 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Application\\Cafm.Application.csproj": {}
+  },
+  "projects": {
+    "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Application\\Cafm.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Application\\Cafm.Application.csproj",
+        "projectName": "Cafm.Application",
+        "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Application\\Cafm.Application.csproj",
+        "packagesPath": "C:\\Users\\b.grace\\.nuget\\packages\\",
+        "outputPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\b.grace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Common\\Cafm.Common.csproj": {
+                "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Common\\Cafm.Common.csproj"
+              },
+              "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj": {
+                "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj"
+              },
+              "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Framework\\Cafm.Framework.csproj": {
+                "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Framework\\Cafm.Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Common\\Cafm.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Common\\Cafm.Common.csproj",
+        "projectName": "Cafm.Common",
+        "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Common\\Cafm.Common.csproj",
+        "packagesPath": "C:\\Users\\b.grace\\.nuget\\packages\\",
+        "outputPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\b.grace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj": {
+                "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj",
+        "projectName": "Cafm.Domain",
+        "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj",
+        "packagesPath": "C:\\Users\\b.grace\\.nuget\\packages\\",
+        "outputPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\b.grace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Framework\\Cafm.Framework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Framework\\Cafm.Framework.csproj",
+        "projectName": "Cafm.Framework",
+        "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Framework\\Cafm.Framework.csproj",
+        "packagesPath": "C:\\Users\\b.grace\\.nuget\\packages\\",
+        "outputPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Framework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\b.grace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Infrastructure\\Cafm.Infrastructure.csproj": {
+                "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Infrastructure\\Cafm.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Infrastructure\\Cafm.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Infrastructure\\Cafm.Infrastructure.csproj",
+        "projectName": "Cafm.Infrastructure",
+        "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Infrastructure\\Cafm.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\b.grace\\.nuget\\packages\\",
+        "outputPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\b.grace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj": {
+                "projectPath": "D:\\Beshoy\\Test\\BackEndDevTest\\Cafm\\Cafm\\Cafm.Domain\\Cafm.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

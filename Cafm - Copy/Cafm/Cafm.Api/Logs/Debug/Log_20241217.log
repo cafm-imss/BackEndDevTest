@@ -1,0 +1,165 @@
+Time: 2024-12-17 15:49:00.658
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-17 15:49:00.660
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-17 15:49:00.729
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-17 15:49:00.730
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-17 15:49:00.730
+Level: Information
+Content root path: "D:\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-17 15:49:04.599
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-17 15:49:05.239
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 663.0752ms
+
+
+Time: 2024-12-17 15:49:07.450
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-17 15:49:07.457
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-17 15:49:08.923
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13752 "application/javascript; charset=utf-8" 1468.4092ms
+
+
+Time: 2024-12-17 15:49:09.037
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 1579.8063ms
+
+
+Time: 2024-12-17 15:49:10.415
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-17 15:49:10.701
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 289.6191ms
+
+
+Time: 2024-12-17 15:50:26.974
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-17 15:50:26.976
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-17 15:50:27.032
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-17 15:50:27.032
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-17 15:50:27.032
+Level: Information
+Content root path: "D:\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-17 15:50:30.870
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-17 15:50:31.395
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 573.4244ms
+
+
+Time: 2024-12-17 15:50:31.598
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-17 15:50:31.611
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13752 "application/javascript; charset=utf-8" 12.6761ms
+
+
+Time: 2024-12-17 15:50:31.655
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-17 15:50:31.716
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 61.5884ms
+
+
+Time: 2024-12-17 15:50:32.973
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-17 15:50:33.272
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 299.5778ms
+
+
+Time: 2024-12-17 15:51:13.369
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/WeatherForecast""" - null null
+
+
+Time: 2024-12-17 15:51:13.459
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WeatherForecastController.Get (Cafm.Api)"'
+
+
+Time: 2024-12-17 15:51:13.550
+Level: Information
+Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Cafm.Api.WeatherForecast] Get()" on controller "Cafm.Api.Controllers.WeatherForecastController" ("Cafm.Api").
+
+
+Time: 2024-12-17 15:51:22.973
+Level: Information
+Executed action "Cafm.Api.Controllers.WeatherForecastController.Get (Cafm.Api)" in 9418.5926ms
+
+
+Time: 2024-12-17 15:51:22.974
+Level: Information
+Executed endpoint '"Cafm.Api.Controllers.WeatherForecastController.Get (Cafm.Api)"'
+
+
+Time: 2024-12-17 15:51:22.981
+Level: Error
+An unhandled exception has occurred while executing the request.
+
+
+Time: 2024-12-17 15:51:23.192
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/WeatherForecast""" - 500 null "text/plain; charset=utf-8" 9827.9579ms
+
+

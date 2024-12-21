@@ -1,0 +1,1626 @@
+Time: 2024-12-21 09:32:06.926
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 09:32:06.929
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 09:32:07.021
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 09:32:07.021
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 09:32:07.021
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 09:32:07.576
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger""" - null null
+
+
+Time: 2024-12-21 09:32:07.773
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger""" - 301 0 null 203.3154ms
+
+
+Time: 2024-12-21 09:32:07.778
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 09:32:07.868
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 89.7419ms
+
+
+Time: 2024-12-21 09:32:07.870
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/swagger-ui.css""" - null null
+
+
+Time: 2024-12-21 09:32:07.871
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 09:32:07.871
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/swagger-ui-standalone-preset.js""" - null null
+
+
+Time: 2024-12-21 09:32:07.871
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 09:32:07.871
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/swagger-ui-bundle.js""" - null null
+
+
+Time: 2024-12-21 09:32:07.882
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 11.8145ms
+
+
+Time: 2024-12-21 09:32:07.937
+Level: Information
+Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 09:32:07.937
+Level: Information
+Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 09:32:07.941
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/swagger-ui-standalone-preset.js""" - 200 230280 "text/javascript" 70.2362ms
+
+
+Time: 2024-12-21 09:32:07.941
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/swagger-ui.css""" - 200 152034 "text/css" 71.0598ms
+
+
+Time: 2024-12-21 09:32:07.943
+Level: Information
+Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 09:32:07.943
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/swagger-ui-bundle.js""" - 200 1456926 "text/javascript" 72.33ms
+
+
+Time: 2024-12-21 09:32:07.975
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 104.5631ms
+
+
+Time: 2024-12-21 09:32:08.215
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 09:32:08.225
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 10.1395ms
+
+
+Time: 2024-12-21 09:32:08.241
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/favicon-32x32.png""" - null null
+
+
+Time: 2024-12-21 09:32:08.242
+Level: Information
+Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 09:32:08.242
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 1.2595ms
+
+
+Time: 2024-12-21 09:32:34.917
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 09:32:34.921
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 09:32:35.120
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 09:32:35.121
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 09:32:35.121
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 09:32:35.427
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 09:32:35.646
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 224.7389ms
+
+
+Time: 2024-12-21 09:32:35.649
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 09:32:35.649
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 09:32:35.656
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 6.8315ms
+
+
+Time: 2024-12-21 09:32:35.694
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 44.8434ms
+
+
+Time: 2024-12-21 09:32:35.907
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 09:32:35.916
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 9.2184ms
+
+
+Time: 2024-12-21 09:48:14.619
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 09:48:14.622
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 09:48:14.695
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 09:48:14.696
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 09:48:14.696
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 09:48:14.844
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 09:48:15.072
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 233.8018ms
+
+
+Time: 2024-12-21 09:48:15.073
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 09:48:15.073
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 09:48:15.079
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 5.67ms
+
+
+Time: 2024-12-21 09:48:15.115
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 42.2322ms
+
+
+Time: 2024-12-21 09:48:15.190
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 09:48:15.205
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 15.3107ms
+
+
+Time: 2024-12-21 09:48:44.717
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 352
+
+
+Time: 2024-12-21 09:48:44.732
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 09:48:44.736
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:48:44.767
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 09:48:46.943
+Level: Information
+Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+
+
+Time: 2024-12-21 09:48:46.949
+Level: Information
+Executed action "Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)" in 2176.7099ms
+
+
+Time: 2024-12-21 09:48:46.949
+Level: Information
+Executed endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:48:46.952
+Level: Information
+Request finished "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - 400 null "text/plain; charset=utf-8" 2236.0244ms
+
+
+Time: 2024-12-21 09:49:07.757
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 360
+
+
+Time: 2024-12-21 09:49:07.765
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 09:49:07.765
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:49:07.765
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 09:49:07.904
+Level: Information
+Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+
+
+Time: 2024-12-21 09:49:07.904
+Level: Information
+Executed action "Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)" in 139.2207ms
+
+
+Time: 2024-12-21 09:49:07.905
+Level: Information
+Executed endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:49:07.905
+Level: Information
+Request finished "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - 400 null "text/plain; charset=utf-8" 153.6659ms
+
+
+Time: 2024-12-21 09:49:48.971
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 360
+
+
+Time: 2024-12-21 09:49:48.972
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 09:49:48.972
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:49:48.972
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 09:52:42.552
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 09:52:42.555
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 09:52:42.631
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 09:52:42.632
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 09:52:42.632
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 09:52:42.974
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 09:52:43.226
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 258.175ms
+
+
+Time: 2024-12-21 09:52:43.231
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 09:52:43.231
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 09:52:43.237
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 6.2527ms
+
+
+Time: 2024-12-21 09:52:43.281
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 50.4442ms
+
+
+Time: 2024-12-21 09:52:43.341
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 09:52:43.357
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 15.3941ms
+
+
+Time: 2024-12-21 09:52:47.151
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 358
+
+
+Time: 2024-12-21 09:52:47.160
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 09:52:47.163
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:52:47.191
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 09:53:26.861
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 09:53:26.864
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 09:53:26.934
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 09:53:26.934
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 09:53:26.934
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 09:53:27.382
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 09:53:27.600
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 222.5656ms
+
+
+Time: 2024-12-21 09:53:27.603
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 09:53:27.603
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 09:53:27.610
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 6.8325ms
+
+
+Time: 2024-12-21 09:53:27.646
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 42.8846ms
+
+
+Time: 2024-12-21 09:53:27.729
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 09:53:27.744
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 15.2161ms
+
+
+Time: 2024-12-21 09:53:32.043
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 358
+
+
+Time: 2024-12-21 09:53:32.051
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 09:53:32.054
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:53:32.083
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 09:53:38.165
+Level: Error
+An error occurred using the connection to database '"CMMS-BE-Test-2"' on server '"SERVER\SQLEXPRESS"'.
+
+
+Time: 2024-12-21 09:54:08.506
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 09:54:08.509
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 09:54:08.583
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 09:54:08.583
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 09:54:08.583
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 09:54:09.210
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 09:54:09.422
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 219.8554ms
+
+
+Time: 2024-12-21 09:54:09.424
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 09:54:09.424
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 09:54:09.429
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 5.0751ms
+
+
+Time: 2024-12-21 09:54:09.467
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 43.2957ms
+
+
+Time: 2024-12-21 09:54:09.538
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 09:54:09.553
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 15.9924ms
+
+
+Time: 2024-12-21 09:54:14.320
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 358
+
+
+Time: 2024-12-21 09:54:14.329
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 09:54:14.332
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:54:14.361
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 09:54:18.816
+Level: Error
+An error occurred using the connection to database '"CMMS-BE-Test-2"' on server '"SERVER\SQLEXPRESS"'.
+
+
+Time: 2024-12-21 09:54:58.697
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 09:54:58.700
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 09:54:58.788
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 09:54:58.789
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 09:54:58.789
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 09:54:58.992
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 09:54:59.209
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 223.0854ms
+
+
+Time: 2024-12-21 09:54:59.215
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 09:54:59.215
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 09:54:59.221
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 5.7227ms
+
+
+Time: 2024-12-21 09:54:59.261
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 45.922ms
+
+
+Time: 2024-12-21 09:54:59.322
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 09:54:59.337
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 16.2518ms
+
+
+Time: 2024-12-21 09:55:05.844
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 358
+
+
+Time: 2024-12-21 09:55:05.852
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 09:55:05.856
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 09:55:05.884
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 10:00:59.071
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 10:00:59.074
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 10:00:59.171
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 10:00:59.171
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 10:00:59.171
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 10:00:59.478
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 10:00:59.832
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 363.6306ms
+
+
+Time: 2024-12-21 10:00:59.835
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 10:00:59.835
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 10:00:59.841
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 6.5272ms
+
+
+Time: 2024-12-21 10:00:59.885
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 50.5325ms
+
+
+Time: 2024-12-21 10:00:59.974
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 10:00:59.991
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 17.6464ms
+
+
+Time: 2024-12-21 10:01:04.026
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 358
+
+
+Time: 2024-12-21 10:01:04.038
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 10:01:04.041
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 10:01:04.072
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 10:02:17.903
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 10:02:17.906
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 10:02:17.983
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 10:02:17.983
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 10:02:17.983
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 10:02:18.646
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 10:02:18.873
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 234.5893ms
+
+
+Time: 2024-12-21 10:02:18.876
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 10:02:18.876
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 10:02:18.883
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 7.2523ms
+
+
+Time: 2024-12-21 10:02:18.928
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 51.417ms
+
+
+Time: 2024-12-21 10:02:18.999
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 10:02:19.015
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 16.2918ms
+
+
+Time: 2024-12-21 10:02:22.987
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 358
+
+
+Time: 2024-12-21 10:02:22.997
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 10:02:23.000
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 10:02:23.029
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 10:02:31.559
+Level: Error
+Failed executing DbCommand ("119"ms) [Parameters=["@__companyId_0='?' (DbType = Int32), @__locationId_1='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [w].[Id], [w].[AssetDownTime], [w].[AssetId], [w].[CompanyId], [w].[CompletionDate], [w].[CompletionNote], [w].[CompletionRatio], [w].[CreatedBy], [w].[CreatedDate], [w].[CreatedOn], [w].[DeletedOn], [w].[DueDate], [w].[EstimatedTime], [w].[InternalNumber], [w].[IsActive], [w].[IsDeleted], [w].[LocationId], [w].[ModifiedDate], [w].[PriorityId], [w].[StartDate], [w].[TaskAssignmentId], [w].[TaskDescription], [w].[TaskName], [w].[TaskPriorityPriorityId], [w].[TaskStatusId], [w].[TaskTypeId], [w].[UpdatedBy], [w].[UpdatedOn]
+FROM [WorkOrders] AS [w]
+WHERE [w].[CompanyId] = @__companyId_0 AND [w].[LocationId] = @__locationId_1"
+
+
+Time: 2024-12-21 10:02:31.580
+Level: Error
+An exception occurred while iterating over the results of a query for context type '"Cafm.Infrastructure.Data.CafmContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedOn'.
+Invalid column name 'DeletedOn'.
+Invalid column name 'IsActive'.
+Invalid column name 'TaskPriorityPriorityId'.
+Invalid column name 'UpdatedBy'.
+Invalid column name 'UpdatedOn'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b138b779-fb87-4dca-ae80-3b105a1d6c61
+Error Number:207,State:1,Class:16"
+
+
+Time: 2024-12-21 10:06:03.265
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 10:06:03.268
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 10:06:03.439
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 10:06:03.440
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 10:06:03.440
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 10:06:03.695
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 10:06:03.919
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 10:06:03.919
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 10:06:03.921
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 231.7221ms
+
+
+Time: 2024-12-21 10:06:03.925
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 5.7046ms
+
+
+Time: 2024-12-21 10:06:03.960
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.1448ms
+
+
+Time: 2024-12-21 10:06:04.033
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 10:06:04.045
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 12.6078ms
+
+
+Time: 2024-12-21 10:06:08.114
+Level: Information
+Request starting "HTTP/2" "POST" "https"://"localhost:7156""""/api/WorkOrder""" - "application/json" 358
+
+
+Time: 2024-12-21 10:06:08.124
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 10:06:08.128
+Level: Information
+Executing endpoint '"Cafm.Api.Controllers.WorkOrderController.CreateWorkOrder (Cafm.Api)"'
+
+
+Time: 2024-12-21 10:06:08.162
+Level: Information
+Route matched with "{action = \"CreateWorkOrder\", controller = \"WorkOrder\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWorkOrder(Cafm.Common.WorkOrder.WorkOrderDto)" on controller "Cafm.Api.Controllers.WorkOrderController" ("Cafm.Api").
+
+
+Time: 2024-12-21 10:06:12.898
+Level: Information
+Executed DbCommand ("66"ms) [Parameters=["@__companyId_0='?' (DbType = Int32), @__locationId_1='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [w].[Id], [w].[AssetDownTime], [w].[AssetId], [w].[CompanyId], [w].[CompletionDate], [w].[CompletionNote], [w].[CompletionRatio], [w].[CreatedBy], [w].[CreatedDate], [w].[CreatedOn], [w].[DeletedOn], [w].[DueDate], [w].[EstimatedTime], [w].[InternalNumber], [w].[IsActive], [w].[IsDeleted], [w].[LocationId], [w].[ModifiedDate], [w].[PriorityId], [w].[StartDate], [w].[TaskAssignmentId], [w].[TaskDescription], [w].[TaskName], [w].[TaskPriorityPriorityId], [w].[TaskStatusId], [w].[TaskTypeId], [w].[UpdatedBy], [w].[UpdatedOn]
+FROM [WorkOrders] AS [w]
+WHERE [w].[CompanyId] = @__companyId_0 AND [w].[LocationId] = @__locationId_1"
+
+
+Time: 2024-12-21 10:06:13.246
+Level: Warning
+Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+
+
+Time: 2024-12-21 10:06:13.385
+Level: Information
+Executed DbCommand ("135"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Int64), @p7='?' (DbType = DateTime2), @p8='?' (DbType = DateTime2), @p9='?' (DbType = DateTime2), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int64), @p13='?' (DbType = Boolean), @p14='?' (DbType = Boolean), @p15='?' (DbType = Int64), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Int32), @p18='?' (DbType = DateTime2), @p19='?' (DbType = Int64), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Int32), @p23='?' (DbType = Int32), @p24='?' (DbType = Int16), @p25='?' (DbType = Guid), @p26='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [WorkOrders] ([AssetDownTime], [AssetId], [CompanyId], [CompletionDate], [CompletionNote], [CompletionRatio], [CreatedBy], [CreatedDate], [CreatedOn], [DeletedOn], [DueDate], [EstimatedTime], [InternalNumber], [IsActive], [IsDeleted], [LocationId], [ModifiedDate], [PriorityId], [StartDate], [TaskAssignmentId], [TaskDescription], [TaskName], [TaskPriorityPriorityId], [TaskStatusId], [TaskTypeId], [UpdatedBy], [UpdatedOn])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26);"
+
+
+Time: 2024-12-21 10:59:37.800
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 10:59:37.803
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 10:59:37.881
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 10:59:37.882
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 10:59:37.882
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 10:59:38.414
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 10:59:38.628
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 221.98ms
+
+
+Time: 2024-12-21 10:59:38.629
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 10:59:38.630
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 10:59:38.635
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 5.4793ms
+
+
+Time: 2024-12-21 10:59:38.676
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 47.4761ms
+
+
+Time: 2024-12-21 10:59:38.747
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 10:59:38.763
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 16.893ms
+
+
+Time: 2024-12-21 11:02:08.055
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:02:08.095
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:02:08.097
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 41.7982ms
+
+
+Time: 2024-12-21 11:02:18.509
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:02:18.512
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:02:18.512
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 3.0276ms
+
+
+Time: 2024-12-21 11:02:58.893
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:02:58.894
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:02:58.894
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 1.5506ms
+
+
+Time: 2024-12-21 11:03:29.431
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:03:29.432
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:03:29.432
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 0.785ms
+
+
+Time: 2024-12-21 11:03:41.736
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:03:41.736
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:03:41.736
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 0.5768ms
+
+
+Time: 2024-12-21 11:04:58.714
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 11:04:58.717
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 11:04:58.790
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 11:04:58.791
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 11:04:58.791
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 11:04:59.251
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 11:04:59.441
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 195.9226ms
+
+
+Time: 2024-12-21 11:04:59.443
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 11:04:59.443
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 11:04:59.449
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 5.3101ms
+
+
+Time: 2024-12-21 11:04:59.483
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 39.5878ms
+
+
+Time: 2024-12-21 11:04:59.555
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 11:04:59.576
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 20.9559ms
+
+
+Time: 2024-12-21 11:05:10.823
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:05:10.831
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:05:10.833
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 9.6178ms
+
+
+Time: 2024-12-21 11:05:25.998
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:05:26.000
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:05:26.000
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 1.9651ms
+
+
+Time: 2024-12-21 11:07:25.925
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/workOrderHub""" - null null
+
+
+Time: 2024-12-21 11:07:25.965
+Level: Information
+Executing endpoint '"/workOrderHub"'
+
+
+Time: 2024-12-21 11:07:25.978
+Level: Information
+Executed endpoint '"/workOrderHub"'
+
+
+Time: 2024-12-21 11:07:25.981
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/workOrderHub""" - 400 null "text/plain" 55.5657ms
+
+
+Time: 2024-12-21 11:07:26.012
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/favicon.ico""" - null null
+
+
+Time: 2024-12-21 11:07:26.015
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/favicon.ico""" - 404 0 null 2.4429ms
+
+
+Time: 2024-12-21 11:07:26.015
+Level: Information
+Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7156""""/favicon.ico", Response status code: 404
+
+
+Time: 2024-12-21 11:07:34.239
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:07:34.243
+Level: Information
+Executing endpoint '"/workOrderHub/negotiate"'
+
+
+Time: 2024-12-21 11:07:34.244
+Level: Information
+Executed endpoint '"/workOrderHub/negotiate"'
+
+
+Time: 2024-12-21 11:07:34.244
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 405 0 "text/plain" 5.7509ms
+
+
+Time: 2024-12-21 11:10:33.561
+Level: Information
+Now listening on: "https://localhost:7156"
+
+
+Time: 2024-12-21 11:10:33.565
+Level: Information
+Now listening on: "http://localhost:5199"
+
+
+Time: 2024-12-21 11:10:33.650
+Level: Information
+Application started. Press Ctrl+C to shut down.
+
+
+Time: 2024-12-21 11:10:33.651
+Level: Information
+Hosting environment: "Development"
+
+
+Time: 2024-12-21 11:10:33.651
+Level: Information
+Content root path: "D:\Beshoy\Test\BackEndDevTest\Cafm\Cafm\Cafm.Api"
+
+
+Time: 2024-12-21 11:10:34.179
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 11:10:34.391
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 219.3702ms
+
+
+Time: 2024-12-21 11:10:34.393
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 11:10:34.393
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 11:10:34.398
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 5.532ms
+
+
+Time: 2024-12-21 11:10:34.438
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 44.8449ms
+
+
+Time: 2024-12-21 11:10:34.515
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 11:10:34.530
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 14.3818ms
+
+
+Time: 2024-12-21 11:10:42.079
+Level: Information
+Request starting "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:10:42.087
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:10:42.089
+Level: Information
+Request finished "HTTP/2" "OPTIONS" "https"://"localhost:7156""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 9.233ms
+
+
+Time: 2024-12-21 11:12:25.404
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 11:12:25.427
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 23.2716ms
+
+
+Time: 2024-12-21 11:12:25.436
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 11:12:25.437
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 11:12:25.437
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 1.2604ms
+
+
+Time: 2024-12-21 11:12:25.457
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 20.5824ms
+
+
+Time: 2024-12-21 11:12:25.553
+Level: Information
+Request starting "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 11:12:25.558
+Level: Information
+Request finished "HTTP/2" "GET" "https"://"localhost:7156""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 5.2126ms
+
+
+Time: 2024-12-21 11:22:17.066
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/index.html""" - null null
+
+
+Time: 2024-12-21 11:22:17.076
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 9.6139ms
+
+
+Time: 2024-12-21 11:22:17.088
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/swagger-ui.css""" - null null
+
+
+Time: 2024-12-21 11:22:17.089
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/swagger-ui-bundle.js""" - null null
+
+
+Time: 2024-12-21 11:22:17.089
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/swagger-ui-standalone-preset.js""" - null null
+
+
+Time: 2024-12-21 11:22:17.091
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/_framework/aspnetcore-browser-refresh.js""" - null null
+
+
+Time: 2024-12-21 11:22:17.094
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/_framework/aspnetcore-browser-refresh.js""" - 200 13768 "application/javascript; charset=utf-8" 3.7098ms
+
+
+Time: 2024-12-21 11:22:17.097
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/_vs/browserLink""" - null null
+
+
+Time: 2024-12-21 11:22:17.102
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 5.1497ms
+
+
+Time: 2024-12-21 11:22:17.135
+Level: Information
+Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 11:22:17.135
+Level: Information
+Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 11:22:17.136
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/swagger-ui.css""" - 200 152034 "text/css" 47.2347ms
+
+
+Time: 2024-12-21 11:22:17.136
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/swagger-ui-standalone-preset.js""" - 200 230280 "text/javascript" 46.1185ms
+
+
+Time: 2024-12-21 11:22:17.136
+Level: Information
+Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 11:22:17.136
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/swagger-ui-bundle.js""" - 200 1456926 "text/javascript" 46.2819ms
+
+
+Time: 2024-12-21 11:22:17.382
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/v1/swagger.json""" - null null
+
+
+Time: 2024-12-21 11:22:17.387
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 4.8615ms
+
+
+Time: 2024-12-21 11:22:17.407
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/favicon-32x32.png""" - null null
+
+
+Time: 2024-12-21 11:22:17.407
+Level: Information
+Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+
+
+Time: 2024-12-21 11:22:17.408
+Level: Information
+Request finished "HTTP/1.1" "GET" "http"://"localhost:5199""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 0.7402ms
+
+
+Time: 2024-12-21 11:22:25.128
+Level: Information
+Request starting "HTTP/1.1" "POST" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - null 0
+
+
+Time: 2024-12-21 11:22:25.161
+Level: Information
+Executing endpoint '"/workOrderHub/negotiate"'
+
+
+Time: 2024-12-21 11:22:25.173
+Level: Information
+Executed endpoint '"/workOrderHub/negotiate"'
+
+
+Time: 2024-12-21 11:22:25.173
+Level: Information
+Request finished "HTTP/1.1" "POST" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - 200 316 "application/json" 45.4046ms
+
+
+Time: 2024-12-21 11:22:25.207
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/workOrderHub""?id=6-WUhvIAeP3Na6V1597Lxg" - null null
+
+
+Time: 2024-12-21 11:22:25.209
+Level: Information
+Executing endpoint '"/workOrderHub"'
+
+
+Time: 2024-12-21 11:22:25.431
+Level: Information
+Request starting "HTTP/1.1" "OPTIONS" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:22:25.432
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:22:25.432
+Level: Information
+Request finished "HTTP/1.1" "OPTIONS" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 1.0322ms
+
+
+Time: 2024-12-21 11:22:37.438
+Level: Information
+Request starting "HTTP/1.1" "POST" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - null 0
+
+
+Time: 2024-12-21 11:22:37.438
+Level: Information
+Executing endpoint '"/workOrderHub/negotiate"'
+
+
+Time: 2024-12-21 11:22:37.439
+Level: Information
+Executed endpoint '"/workOrderHub/negotiate"'
+
+
+Time: 2024-12-21 11:22:37.439
+Level: Information
+Request finished "HTTP/1.1" "POST" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - 200 316 "application/json" 1.1259ms
+
+
+Time: 2024-12-21 11:22:37.447
+Level: Information
+Request starting "HTTP/1.1" "GET" "http"://"localhost:5199""""/workOrderHub""?id=S-1SMxAMibIxflu4Qv_3kQ" - null null
+
+
+Time: 2024-12-21 11:22:37.448
+Level: Information
+Executing endpoint '"/workOrderHub"'
+
+
+Time: 2024-12-21 11:22:37.567
+Level: Information
+Request starting "HTTP/1.1" "OPTIONS" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - null null
+
+
+Time: 2024-12-21 11:22:37.567
+Level: Information
+CORS policy execution successful.
+
+
+Time: 2024-12-21 11:22:37.567
+Level: Information
+Request finished "HTTP/1.1" "OPTIONS" "http"://"localhost:5199""""/workOrderHub/negotiate""?negotiateVersion=1" - 204 null null 0.4364ms
+
+
