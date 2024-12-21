@@ -1,4 +1,5 @@
 using CAFM.API.Extension;
+using CAFM.Core.Hubs;
 using CAFM.Database.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,11 +34,16 @@ namespace CAFM.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseRouting();
 
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();  // Your other controller routes
+                endpoints.MapHub<WorkOrderHub>("/workOrderHub");  // Map the SignalR hub
+            });
 
             app.MapControllers();
 

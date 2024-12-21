@@ -1,5 +1,7 @@
-﻿using CAFM.Core.Interfaces;
+﻿using CAFM.Core.Hubs;
+using CAFM.Core.Interfaces;
 using CAFM.Database.Models;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,11 +10,13 @@ namespace CAFM.Core.Services
 {
     public class WorkOrderService : IWorkOrderService
     {
+        private readonly IHubContext<WorkOrderHub> _hubContext;
         private readonly IUnitOfWork _unitOfWork;
 
-        public WorkOrderService(IUnitOfWork unitOfWork)
+        public WorkOrderService(IUnitOfWork unitOfWork, IHubContext<WorkOrderHub> hubContext)
         {
             _unitOfWork = unitOfWork;
+            _hubContext = hubContext;
         }
 
         public async Task<long> SaveWorkOrderAsync(WorkOrder workOrder)
@@ -32,6 +36,9 @@ namespace CAFM.Core.Services
                 _unitOfWork.WorkOrderRepository.Add(workOrder);
                 await _unitOfWork.SaveChangesAsync();
 
+                // Broadcast new work order to all clients
+                await _hubContext.Clients.All.SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, "New work order created");
+
                 await transaction.CommitAsync();
                 return workOrder.Id;
             }
@@ -41,7 +48,6 @@ namespace CAFM.Core.Services
                 throw;
             }
         }
-
         public async Task<long> GenerateInternalNumberAsync()
         {
             // Fetch the highest existing internal number
@@ -91,7 +97,7 @@ namespace CAFM.Core.Services
 
                 try
                 {
-                    workOrder.TaskStatus =  _unitOfWork.TaskStatueRepository.Find(a=>a.Id == workOrder.TaskStatusId); 
+                    workOrder.TaskStatus = _unitOfWork.TaskStatueRepository.Find(a => a.Id == workOrder.TaskStatusId);
                 }
                 catch (Exception ex)
                 {
@@ -159,6 +165,9 @@ namespace CAFM.Core.Services
             // Save changes
             _unitOfWork.WorkOrderRepository.Update(workOrder);
             await _unitOfWork.SaveChangesAsync();
+
+            // Broadcast status change to clients
+            await _hubContext.Clients.All.SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, "Work order status updated");
 
             return true;
         }

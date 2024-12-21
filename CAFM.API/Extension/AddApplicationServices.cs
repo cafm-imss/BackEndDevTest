@@ -9,6 +9,7 @@ namespace CAFM.API.Extension
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IWorkOrderService, WorkOrderService>();
+            services.AddSignalR();
             return services;
         }
     }

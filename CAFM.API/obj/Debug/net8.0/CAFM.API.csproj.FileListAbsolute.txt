@@ -93,3 +93,5 @@ C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.API\bin\Debug\net8.0\CAFM.
 C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.API\bin\Debug\net8.0\CAFM.Core.pdb
 C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.API\bin\Debug\net8.0\CAFM.Database.pdb
 C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.API\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
