@@ -1,0 +1,60 @@
+<div *ngIf="workOrder" class="container mt-5">
+  <h2>Work Order Details</h2>
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ workOrder.taskName }}</h5>
+      <p class="card-text">{{ workOrder.taskDescription }}</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>ID:</strong> {{ workOrder.id }}</p>
+          <p><strong>Company ID:</strong> {{ workOrder.companyId }}</p>
+          <p><strong>Location ID:</strong> {{ workOrder.locationId }}</p>
+          <p><strong>Internal Number:</strong> {{ workOrder.internalNumber }}</p>
+          <p><strong>Start Date:</strong> {{ workOrder.startDate | date:'medium' }}</p>
+          <p><strong>Due Date:</strong> {{ workOrder.dueDate | date:'medium' }}</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Estimated Time:</strong> {{ workOrder.estimatedTime }} hours</p>
+          <p><strong>Completion Date:</strong> {{ workOrder.completionDate | date:'medium' }}</p>
+          <p><strong>Completion Note:</strong> {{ workOrder.completionNote }}</p>
+          <p><strong>Priority ID:</strong> {{ workOrder.priorityId }}</p>
+          <p><strong>Completion Ratio:</strong> {{ workOrder.completionRatio }}%</p>
+        </div>
+      </div>
+      
+      <hr>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#taskStatusCollapse" aria-expanded="false" aria-controls="taskStatusCollapse">
+        Task Status
+      </button>
+      <div class="collapse mt-3" id="taskStatusCollapse">
+        <h5>Task Status</h5>
+        <p *ngIf="workOrder.taskStatus">
+          <strong>Status Name:</strong> {{ workOrder.taskStatus.statusName }}<br>
+          <strong>Status Name (EN):</strong> {{ workOrder.taskStatus.statusNameEn }}<br>
+          <strong>Is Started:</strong> {{ workOrder.taskStatus.isStart }}<br>
+          <strong>Is Completed:</strong> {{ workOrder.taskStatus.isCompleted }}
+        </p>
+        <p *ngIf="!workOrder.taskStatus">No status information available</p>
+      </div>
+
+      <hr>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#assetCollapse" aria-expanded="false" aria-controls="assetCollapse">
+        Asset Details
+      </button>
+      <div class="collapse mt-3" id="assetCollapse">
+        <h5>Asset</h5>
+        <p *ngIf="workOrder.asset">
+          <strong>Asset Name:</strong> {{ workOrder.asset.assetName }}<br>
+          <strong>Notes:</strong> {{ workOrder.asset.notes }}<br>
+          <strong>Category ID:</strong> {{ workOrder.asset.categoryId }}<br>
+          <strong>Image Path:</strong> {{ workOrder.asset.imagePath }}<br>
+          <strong>Weekly Operation Hours:</strong> {{ workOrder.asset.weeklyOperationHours }}
+        </p>
+        <p *ngIf="!workOrder.asset">No asset information available</p>
+      </div>
+    </div>
+  </div>
+</div>
