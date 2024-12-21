@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "bK+HGXH+bf53neA1QQEA8boFIfUr8olRN/qCkNzlMfc=",
+  "Source": "CAFM.API",
+  "BasePath": "_content/CAFM.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
