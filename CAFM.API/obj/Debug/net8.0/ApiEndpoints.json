@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "CAFM.API.Controllers.WorkOrderController",
+    "ContainingType": "WorkOrderController",
     "Method": "CreateWorkOrder",
     "RelativePath": "api/WorkOrder",
     "HttpMethod": "POST",
@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CAFM.API.Controllers.WorkOrderController",
+    "ContainingType": "WorkOrderController",
     "Method": "GetWorkOrderById",
     "RelativePath": "api/WorkOrder/{id}",
     "HttpMethod": "GET",
@@ -32,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CAFM.API.Controllers.WorkOrderController",
+    "ContainingType": "WorkOrderController",
     "Method": "UpdateWorkOrderStatus",
     "RelativePath": "api/WorkOrder/{id}/status",
     "HttpMethod": "PUT",
