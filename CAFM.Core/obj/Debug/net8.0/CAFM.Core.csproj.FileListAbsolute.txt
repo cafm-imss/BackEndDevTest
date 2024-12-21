@@ -1,0 +1,16 @@
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\bin\Debug\net8.0\CAFM.Core.deps.json
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\bin\Debug\net8.0\CAFM.Core.dll
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\bin\Debug\net8.0\CAFM.Core.pdb
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\bin\Debug\net8.0\CAFM.Database.dll
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\bin\Debug\net8.0\CAFM.Database.pdb
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.AssemblyInfo.cs
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.sourcelink.json
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.csproj.Up2Date
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.dll
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\refint\CAFM.Core.dll
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\CAFM.Core.pdb
+C:\Users\Ahmed\Documents\M.A\work\BackEndDevTest\CAFM.Core\obj\Debug\net8.0\ref\CAFM.Core.dll

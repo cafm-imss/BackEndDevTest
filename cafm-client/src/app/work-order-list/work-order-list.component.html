@@ -1,0 +1,16 @@
+<div *ngIf="workOrderId">
+  <h2>Work Order #{{ workOrderId }} - Emergency AC Repair</h2>
+  <div>
+    <h3>Asset: First Floor AC Unit</h3>
+    <h4>Status History:</h4>
+    <ul>
+      <li *ngFor="let status of statusHistory">
+        <strong>{{ status.status }}</strong> - {{ status.timestamp }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div *ngIf="!workOrderId">
+  <p>No updates available for the work order.</p>
+</div>
