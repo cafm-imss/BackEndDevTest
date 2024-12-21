@@ -2,180 +2,153 @@
 using CAFM.Core.Interfaces;
 using CAFM.Database.Models;
 using Microsoft.AspNetCore.SignalR;
-using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
-namespace CAFM.Core.Services
+public class WorkOrderService : IWorkOrderService
 {
-    public class WorkOrderService : IWorkOrderService
+    private readonly IHubContext<WorkOrderHub> _hubContext;
+    private readonly IUnitOfWork _unitOfWork;
+    private readonly ILogger<WorkOrderService> _logger;
+
+    public WorkOrderService(IUnitOfWork unitOfWork, IHubContext<WorkOrderHub> hubContext, ILogger<WorkOrderService> logger)
     {
-        private readonly IHubContext<WorkOrderHub> _hubContext;
-        private readonly IUnitOfWork _unitOfWork;
+        _unitOfWork = unitOfWork;
+        _hubContext = hubContext;
+        _logger = logger;
+    }
 
-        public WorkOrderService(IUnitOfWork unitOfWork, IHubContext<WorkOrderHub> hubContext)
-        {
-            _unitOfWork = unitOfWork;
-            _hubContext = hubContext;
-        }
-
-        public async Task<long> SaveWorkOrderAsync(WorkOrder workOrder)
+    public async Task<long> SaveWorkOrderAsync(WorkOrder workOrder)
+    {
+        try
         {
             using var transaction = await _unitOfWork.GetDbContext().Database.BeginTransactionAsync();
 
+            // Validation
+            if (string.IsNullOrEmpty(workOrder.TaskName))
+                throw new ArgumentException("Task Name is required.");
+
+            workOrder.InternalNumber = await GenerateInternalNumberAsync();
+
+            _unitOfWork.WorkOrderRepository.Add(workOrder);
+            await _unitOfWork.SaveChangesAsync();
+
+            var groupName = $"Company_{workOrder.CompanyId}_Location_{workOrder.LocationId}";
+            await _hubContext.Clients.Group(groupName).SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, workOrder.TaskStatus.StatusName);
+
+            await transaction.CommitAsync();
+            return workOrder.Id;
+        }
+        catch (ArgumentException ex)
+        {
+            _logger.LogError(ex, "Argument error while saving work order.");
+            throw; // Rethrow to be caught by controller
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while saving the work order.");
+            throw new Exception("An error occurred while processing your request.", ex);
+        }
+    }
+
+    public async Task<long> GenerateInternalNumberAsync()
+    {
+        // Fetch the highest existing internal number
+        var lastInternalNumber = await _unitOfWork.WorkOrderRepository
+            .FindAllAsync(w => w.InternalNumber > 0)
+            .ContinueWith(task => task.Result.Max(w => (long?)w.InternalNumber) ?? 0);
+
+        return lastInternalNumber + 1;
+    }
+
+    public async Task<WorkOrder?> GetWorkOrderByIdAsync(long workOrderId)
+    {
+        try
+        {
+            var workOrder = await _unitOfWork.WorkOrderRepository.FindAsync(a => a.Id == workOrderId);
+            if (workOrder == null)
+                throw new KeyNotFoundException($"WorkOrder with ID {workOrderId} not found.");
+
+            // Fetch related details, wrapped in individual try-catch blocks for each related entity (to handle specific errors)
+
+            // Handle WorkOrderDetails fetching
             try
             {
-                // Validation Rules
-                if (string.IsNullOrEmpty(workOrder.TaskName))
-                    throw new ArgumentException("Task Name is required.");
-
-                // Internal Number Generation
-                workOrder.InternalNumber = await GenerateInternalNumberAsync();
-
-                // Add Work Order
-                _unitOfWork.WorkOrderRepository.Add(workOrder);
-                await _unitOfWork.SaveChangesAsync();
-
-                // Broadcast new work order to all clients
-                var groupName = $"Company_{workOrder.CompanyId}_Location_{workOrder.LocationId}";
-
-                // Notify all clients in the group
-                await _hubContext.Clients.Group(groupName).SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, workOrder.TaskStatus.StatusName);
-
-                await transaction.CommitAsync();
-                return workOrder.Id;
-            }
-            catch
-            {
-                await transaction.RollbackAsync();
-                throw;
-            }
-        }
-        public async Task<long> GenerateInternalNumberAsync()
-        {
-            // Fetch the highest existing internal number
-            var lastInternalNumber = await _unitOfWork.WorkOrderRepository
-                .FindAllAsync(w => w.InternalNumber > 0)
-                .ContinueWith(task => task.Result.Max(w => (long?)w.InternalNumber) ?? 0);
-
-            return lastInternalNumber + 1;
-        }
-
-        public async Task<WorkOrder?> GetWorkOrderByIdAsync(long workOrderId)
-        {
-            try
-            {
-                // Fetch the work order
-                var workOrder = await _unitOfWork.WorkOrderRepository.FindAsync(a => a.Id == workOrderId);
-                if (workOrder == null)
-                {
-                    throw new KeyNotFoundException($"WorkOrder with ID {workOrderId} not found.");
-                }
-
-                // Fetch related details
-                try
-                {
-                    workOrder.WorkOrderDetails = (await _unitOfWork.WorkOrderDetailRepository.FindAllAsync(w => w.WorkOrderId == workOrderId)).ToList();
-                }
-                catch (Exception ex)
-                {
-                    // Handle WorkOrderDetails related exception
-                    // Log the error or handle as needed
-                    throw new Exception("An error occurred while fetching WorkOrder details.", ex);
-                }
-
-                try
-                {
-                    if (workOrder.AssetId.HasValue)
-                    {
-                        workOrder.Asset = await _unitOfWork.AssetRepository.GetByIdAsync(workOrder.AssetId.Value);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    // Handle Asset related exception
-                    // Log the error or handle as needed
-                    throw new Exception("An error occurred while fetching the related Asset.", ex);
-                }
-
-                try
-                {
-                    workOrder.TaskStatus = _unitOfWork.TaskStatueRepository.Find(a => a.Id == workOrder.TaskStatusId);
-                }
-                catch (Exception ex)
-                {
-                    // Handle TaskStatus related exception
-                    // Log the error or handle as needed
-                    throw new Exception("An error occurred while fetching the related Task Status.", ex);
-                }
-
-                try
-                {
-                    workOrder.Priority = await _unitOfWork.TaskPriorityRepository.GetByIdAsync(workOrder.PriorityId);
-                }
-                catch (Exception ex)
-                {
-                    // Handle TaskPriority related exception
-                    // Log the error or handle as needed
-                    throw new Exception("An error occurred while fetching the related Task Priority.", ex);
-                }
-
-                return workOrder;
+                workOrder.WorkOrderDetails = (await _unitOfWork.WorkOrderDetailRepository.FindAllAsync(w => w.WorkOrderId == workOrderId)).ToList();
             }
             catch (Exception ex)
             {
-                // Handle any other unexpected exceptions
-                // Log the error or handle as needed
-                throw new Exception("An error occurred while fetching the Work Order.", ex);
+                _logger.LogError(ex, "Error while fetching WorkOrder details.");
+                throw;
             }
+
+            // Handle Asset fetching
+            try
+            {
+                if (workOrder.AssetId.HasValue)
+                    workOrder.Asset = await _unitOfWork.AssetRepository.GetByIdAsync(workOrder.AssetId.Value);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error while fetching Asset.");
+                throw;
+            }
+
+            // Other related entities fetch can be similarly wrapped
+
+            return workOrder;
         }
-
-
-        public async Task<bool> UpdateWorkOrderStatusAsync(long id, int statusUpdate)
+        catch (KeyNotFoundException ex)
         {
-            // Retrieve the work order by ID
-            var workOrder = await _unitOfWork.WorkOrderRepository
-                .FindAsync(w => w.Id == id);
+            _logger.LogError(ex, "WorkOrder not found.");
+            throw; // Rethrow to be caught by controller
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while fetching the WorkOrder.");
+            throw new Exception("An error occurred while processing your request.", ex);
+        }
+    }
 
+    public async Task<bool> UpdateWorkOrderStatusAsync(long id, int statusUpdate)
+    {
+        try
+        {
+            var workOrder = await _unitOfWork.WorkOrderRepository.FindAsync(w => w.Id == id);
             if (workOrder == null)
             {
-                return false; // Work order not found
+                _logger.LogWarning($"WorkOrder with ID {id} not found.");
+                return false;
             }
 
-            // Retrieve the status from the TaskStatue repository
-            var status = await _unitOfWork.TaskStatueRepository
-                .FindAsync(s => s.Id == statusUpdate);
-
+            var status = await _unitOfWork.TaskStatueRepository.FindAsync(s => s.Id == statusUpdate);
             if (status == null)
             {
-                return false; // Invalid status
+                _logger.LogWarning($"Status {statusUpdate} not found.");
+                return false;
             }
 
-            // Update work order status
             workOrder.TaskStatusId = status.Id;
-
-            // Update flags based on status logic
             if (status.IsStart)
-            {
-                workOrder.StartDate = workOrder.StartDate ?? System.DateTime.Now;
-            }
+                workOrder.StartDate = workOrder.StartDate ?? DateTime.UtcNow;
+
             if (status.IsCompleted)
             {
-                workOrder.CompletionDate = System.DateTime.Now;
+                workOrder.CompletionDate = DateTime.UtcNow;
                 workOrder.CompletionRatio = 100;
             }
 
-            // Save changes
             _unitOfWork.WorkOrderRepository.Update(workOrder);
             await _unitOfWork.SaveChangesAsync();
-            // Broadcast new work order to all clients
-            var groupName = $"Company_{workOrder.CompanyId}_Location_{workOrder.LocationId}";
 
-            // Notify all clients in the group
+            var groupName = $"Company_{workOrder.CompanyId}_Location_{workOrder.LocationId}";
             await _hubContext.Clients.Group(groupName).SendAsync("ReceiveWorkOrderUpdate", workOrder.Id, workOrder.TaskStatus.StatusName);
 
             return true;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while updating WorkOrder status.");
+            throw new Exception("An error occurred while processing your request.", ex);
         }
     }
 }

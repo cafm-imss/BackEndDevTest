@@ -19,9 +19,9 @@ export class WorkOrderListComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute, private workOrderService: WorkOrderService) {}
 
   ngOnInit(): void {
-    const companyIdParam = this.route.snapshot.paramMap.get('companyId');
-    const locationIdParam = this.route.snapshot.paramMap.get('locationId');
-    
+    const companyIdParam = 1;
+    const locationIdParam = 1;
+    console.log('Parm:', this.route.snapshot.paramMap);
     console.log('Company ID:', companyIdParam);
     console.log('Location ID:', locationIdParam);
   

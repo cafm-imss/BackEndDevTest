@@ -1,24 +1,25 @@
 ﻿using CAFM.Core.DTO;
 using CAFM.Core.Interfaces;
 using CAFM.Database.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CAFM.API.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class WorkOrderController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class WorkOrderController : ControllerBase
+    private readonly IWorkOrderService _workOrderService;
+    private readonly ILogger<WorkOrderController> _logger;
+
+    public WorkOrderController(IWorkOrderService workOrderService, ILogger<WorkOrderController> logger)
     {
-        private readonly IWorkOrderService _workOrderService;
+        _workOrderService = workOrderService;
+        _logger = logger;
+    }
 
-        public WorkOrderController(IWorkOrderService workOrderService)
-        {
-            _workOrderService = workOrderService;
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> CreateWorkOrder([FromBody] WorkOrderPostDto workOrderDto)
+    [HttpPost]
+    public async Task<IActionResult> CreateWorkOrder([FromBody] WorkOrderPostDto workOrderDto)
+    {
+        try
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -40,12 +41,26 @@ namespace CAFM.API.Controllers
                 CreatedBy = workOrderDto.CreatedBy,
                 CreatedDate = DateTime.UtcNow
             };
+
             var workOrderId = await _workOrderService.SaveWorkOrderAsync(workOrder);
             return CreatedAtAction(nameof(GetWorkOrderById), new { id = workOrderId }, workOrder);
         }
+        catch (ArgumentException ex)
+        {
+            _logger.LogError(ex, "Invalid data while creating work order.");
+            return BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while creating the work order.");
+            return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred. Please try again.");
+        }
+    }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetWorkOrderById(long id)
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetWorkOrderById(long id)
+    {
+        try
         {
             var workOrder = await _workOrderService.GetWorkOrderByIdAsync(id);
             if (workOrder == null)
@@ -53,15 +68,33 @@ namespace CAFM.API.Controllers
 
             return Ok(workOrder);
         }
+        catch (KeyNotFoundException ex)
+        {
+            _logger.LogError(ex, "WorkOrder not found.");
+            return NotFound();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while fetching the work order.");
+            return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred. Please try again.");
+        }
+    }
 
-        [HttpPut("{id}/status")]
-        public async Task<IActionResult> UpdateWorkOrderStatus(long id, [FromBody] int statusUpdate)
+    [HttpPut("{id}/status")]
+    public async Task<IActionResult> UpdateWorkOrderStatus(long id, [FromBody] int statusUpdate)
+    {
+        try
         {
             var result = await _workOrderService.UpdateWorkOrderStatusAsync(id, statusUpdate);
             if (result)
                 return NoContent();
 
             return NotFound();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while updating work order status.");
+            return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred. Please try again.");
         }
     }
 }
