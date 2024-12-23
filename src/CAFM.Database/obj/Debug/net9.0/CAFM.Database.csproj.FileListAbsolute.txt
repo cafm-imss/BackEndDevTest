@@ -1,0 +1,15 @@
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\bin\Debug\net9.0\CAFM.Database.deps.json
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\bin\Debug\net9.0\CAFM.Database.runtimeconfig.json
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\bin\Debug\net9.0\CAFM.Database.dll
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\bin\Debug\net9.0\CAFM.Database.pdb
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.csproj.AssemblyReference.cache
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.AssemblyInfoInputs.cache
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.AssemblyInfo.cs
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.csproj.CoreCompileInputs.cache
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.sourcelink.json
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.dll
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\refint\CAFM.Database.dll
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.pdb
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\CAFM.Database.genruntimeconfig.cache
+D:\cafm-ims\BackEndDevTest\src\CAFM.Database\obj\Debug\net9.0\ref\CAFM.Database.dll
