@@ -8,6 +8,16 @@ using System.Globalization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") // Allow requests from Angular app
+              .AllowAnyHeader() // Allow all headers
+              .AllowAnyMethod() // Allow all HTTP methods
+              .AllowCredentials(); // Allow cookies or credentials
+    });
+});
 
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
@@ -44,6 +54,7 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
 });
 var app = builder.Build();
+app.UseCors();
 app.MapHub<WorkOrderHub>("/workOrderHub");
 app.UseRequestLocalization(new RequestLocalizationOptions
 {

@@ -3,14 +3,14 @@
   "WorkspaceRootPath": "D:\\cafm-ims\\BackEndDevTest\\src\\CAFM.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D0CC48BF-893F-4E23-A1E0-5618045C7420}|CAFM.Api.csproj|d:\\cafm-ims\\backenddevtest\\src\\cafm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0CC48BF-893F-4E23-A1E0-5618045C7420}|CAFM.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33601C17-B344-401A-A2C3-595536BF5910}|..\\CAFM.Core\\CAFM.Core.csproj|d:\\cafm-ims\\backenddevtest\\src\\cafm.core\\hubs\\workorderhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33601C17-B344-401A-A2C3-595536BF5910}|..\\CAFM.Core\\CAFM.Core.csproj|d:\\cafm-ims\\backenddevtest\\src\\cafm.core\\services\\workorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0CC48BF-893F-4E23-A1E0-5618045C7420}|CAFM.Api.csproj|d:\\cafm-ims\\backenddevtest\\src\\cafm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0CC48BF-893F-4E23-A1E0-5618045C7420}|CAFM.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0CC48BF-893F-4E23-A1E0-5618045C7420}|CAFM.Api.csproj|d:\\cafm-ims\\backenddevtest\\src\\cafm.api\\cafm.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -24,7 +24,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -112,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WorkOrderHub.cs",
               "DocumentMoniker": "D:\\cafm-ims\\BackEndDevTest\\src\\CAFM.Core\\Hubs\\WorkOrderHub.cs",
               "RelativeDocumentMoniker": "..\\CAFM.Core\\Hubs\\WorkOrderHub.cs",
@@ -126,19 +126,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CAFM.Api",
+              "Title": "CAFM.Api.csproj",
               "DocumentMoniker": "D:\\cafm-ims\\BackEndDevTest\\src\\CAFM.Api\\CAFM.Api.csproj",
               "RelativeDocumentMoniker": "CAFM.Api.csproj",
               "ToolTip": "D:\\cafm-ims\\BackEndDevTest\\src\\CAFM.Api\\CAFM.Api.csproj",
               "RelativeToolTip": "CAFM.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-23T05:48:43.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T05:48:43.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WorkOrderService.cs",
               "DocumentMoniker": "D:\\cafm-ims\\BackEndDevTest\\src\\CAFM.Core\\Services\\WorkOrderService.cs",
               "RelativeDocumentMoniker": "..\\CAFM.Core\\Services\\WorkOrderService.cs",
@@ -146,18 +145,17 @@
               "RelativeToolTip": "..\\CAFM.Core\\Services\\WorkOrderService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAIsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T05:48:23.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T05:48:23.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\cafm-ims\\BackEndDevTest\\src\\CAFM.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\cafm-ims\\BackEndDevTest\\src\\CAFM.Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T05:45:38.804Z",
               "EditorCaption": ""
