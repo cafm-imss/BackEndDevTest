@@ -11,6 +11,8 @@ using System.Data;
 using System.IO;
 using Microsoft.EntityFrameworkCore;
 using CAFM.Core.Resources;
+using Microsoft.AspNetCore.SignalR;
+using CAFM.Core.Hubs;
 
 namespace CAFM.Core.Services
 {
@@ -26,13 +28,26 @@ namespace CAFM.Core.Services
         //Standardized: Compatible with many frameworks and platforms.
         //Efficient: Enables easy reuse of translations across projects.
         private readonly IStringLocalizer<Messages> _localizer;
-        public WorkOrderService(CAFMDbContext dbContext, ErrorLogService errorLogService, IStringLocalizer<Messages> localizer)
+
+        private readonly IHubContext<WorkOrderHub> _hubContext;
+        public WorkOrderService(CAFMDbContext dbContext, ErrorLogService errorLogService, IStringLocalizer<Messages> localizer, IHubContext<WorkOrderHub> hubContext)
         {
             _dbContext = dbContext;
             _errorLogService = errorLogService;
             _localizer = localizer;
+            _hubContext = hubContext;
         }
-
+        public async Task NotifyClients(string workOrderId, string eventType, string groupName = null)
+        {
+            if (string.IsNullOrWhiteSpace(groupName))
+            {
+                await _hubContext.Clients.All.SendAsync(eventType, workOrderId);
+            }
+            else
+            {
+                await _hubContext.Clients.Group(groupName).SendAsync(eventType, workOrderId);
+            }
+        }
         public async Task<string> SaveWorkOrderAsync(WorkOrder workOrder)
         {
             var transaction = await _dbContext.Database.BeginTransactionAsync();
@@ -50,7 +65,7 @@ namespace CAFM.Core.Services
                 await _dbContext.SaveChangesAsync();
 
                 await transaction.CommitAsync();
-
+                await NotifyClients(workOrder.ID.ToString(), "NewWorkOrder", $"Company-{workOrder.CompanyId}");
                 return _localizer["SuccessMessage", workOrder.InternalNumber];
             }
             catch (Exception ex)
@@ -122,6 +137,7 @@ namespace CAFM.Core.Services
 
                 _dbContext.WorkOrders.Update(workOrder);
                 await _dbContext.SaveChangesAsync();
+                await NotifyClients(id.ToString(), "WorkOrderStatusChanged");
             }
             catch (KeyNotFoundException)
             {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CAFM.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f61e668e6a7ea045573f108852c9f28f9438f27")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c70a3f62500872878b913aa63b7b15f04dd2c1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CAFM.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CAFM.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,3 +1,4 @@
+using CAFM.Core.Hubs;
 using CAFM.Core.Services;
 using CAFM.Database;
 using Microsoft.AspNetCore.Localization;
@@ -11,7 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-}); 
+});
+builder.Services.AddSignalR();
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
@@ -41,6 +44,7 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
 });
 var app = builder.Build();
+app.MapHub<WorkOrderHub>("/workOrderHub");
 app.UseRequestLocalization(new RequestLocalizationOptions
 {
     DefaultRequestCulture = new RequestCulture("ar"),

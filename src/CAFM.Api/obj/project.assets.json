@@ -1747,7 +1747,10 @@
         },
         "runtime": {
           "bin/placeholder/CAFM.Core.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "CAFM.Database/1.0.0": {
         "type": "project",
