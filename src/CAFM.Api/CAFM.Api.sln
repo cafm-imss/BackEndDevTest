@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAFM.Api", "CAFM.Api.csproj", "{D0CC48BF-893F-4E23-A1E0-5618045C7420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAFM.Database", "..\CAFM.Database\CAFM.Database.csproj", "{D41F9ACF-F010-4759-97C6-7F9240BAAE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAFM.Core", "..\CAFM.Core\CAFM.Core.csproj", "{33601C17-B344-401A-A2C3-595536BF5910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0CC48BF-893F-4E23-A1E0-5618045C7420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CC48BF-893F-4E23-A1E0-5618045C7420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CC48BF-893F-4E23-A1E0-5618045C7420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CC48BF-893F-4E23-A1E0-5618045C7420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D41F9ACF-F010-4759-97C6-7F9240BAAE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41F9ACF-F010-4759-97C6-7F9240BAAE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41F9ACF-F010-4759-97C6-7F9240BAAE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41F9ACF-F010-4759-97C6-7F9240BAAE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33601C17-B344-401A-A2C3-595536BF5910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33601C17-B344-401A-A2C3-595536BF5910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33601C17-B344-401A-A2C3-595536BF5910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33601C17-B344-401A-A2C3-595536BF5910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
